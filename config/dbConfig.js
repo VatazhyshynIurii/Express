@@ -4,8 +4,7 @@ const connectDB = async () => {
   try {
     mongoose.set('strictQuery', false);
     await mongoose.connect(process.env.BATABASE_URI, {
-      useUnifiedTopology: true,
-      useNewUrlParser: true
+      useUnifiedTopology: true
     });
   } catch (err) {
     console.log(err);
