@@ -20,7 +20,7 @@ const app = express();
 connectDB();
 
 app.use(credentials);
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(limiter);
 app.use(compression());
 app.use(express.static('public'));
